@@ -1,4 +1,4 @@
-def show_parens(expr: str):
+def include_parens(expr: str) -> str:
     """Assuming string input is valid."""
     operands = []
     operators = []
@@ -24,4 +24,4 @@ cases = [
     "1 + 2 ) * 3 - 4 ) * 5 - 6 ) ) )",
 ]
 for case in cases:
-    print(show_parens(case))
+    print(include_parens(case))
