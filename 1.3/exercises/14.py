@@ -1,7 +1,7 @@
 from typing import Optional
 
 
-class FixedArrayQueueOfStrings:
+class FixedArrayQueueOfInts:
     """As always, assuming valid function input."""
 
     def __init__(self, capacity: int):
@@ -29,7 +29,7 @@ class FixedArrayQueueOfStrings:
         return elem
 
 
-class ResizingArrayQueueOfStrings:
+class ResizingArrayQueueOfInts:
     """As always, assuming valid function input."""
 
     def __init__(self):
