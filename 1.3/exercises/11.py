@@ -37,7 +37,6 @@ def apply_op(op: str, l: int, r: int) -> int:
 def evaluate_postfix(expr: str) -> int:
     """Assuming string input is valid."""
     operands = []
-    operators = []
 
     pieces = expr.split(" ")
     for piece in pieces:
