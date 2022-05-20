@@ -24,12 +24,12 @@ class Queue:
             raise IndexError("empty queue")
 
         if self.last.next == self.last:
-            temp = self.last
+            elem = self.last
             self.last = None
-            return temp
+        else:
+            elem = self.last.next
+            self.last.next = elem.next
 
-        elem = self.last.next
-        self.last.next = elem.next
         return elem
 
     def print(self):
