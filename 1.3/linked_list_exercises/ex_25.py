@@ -1,22 +1,7 @@
-from typing import Any, Optional
+from typing import Optional
 
+from node import Node, print_ll, build_ll
 
-class Node:
-    def __init__(self, val: Any, next: Optional["Node"]):
-        self.val = val
-        self.next = next
-
-def print_ll(head: Optional[Node]):
-    while head:
-        print(f"{head.val} ", end="")
-        head = head.next
-    print("")
-
-def build_ll(strs: list[str]) -> Optional[Node]:
-    cur = None
-    for s in strs:
-        cur = Node(s, cur)
-    return cur
 
 def insert_after(first: Optional[Node], second: Optional[Node]):
     """Assuming that the rest of second's linked-list should be inserted as well."""

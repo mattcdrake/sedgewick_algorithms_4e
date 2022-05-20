@@ -1,22 +1,7 @@
 from typing import Optional
 
+from node import Node, build_ll, print_ll
 
-class Node:
-    def __init__(self, val: str, next: Optional["Node"]):
-        self.val = val
-        self.next = next
-
-def build_ll(strs: list[str]) -> Optional[Node]:
-    cur = None
-    for s in strs:
-        cur = Node(s, cur)
-    return cur
-
-def print_ll(head: Optional[Node]):
-    while head:
-        print(f"{head.val} ", end="")
-        head = head.next
-    print("")
 
 def find(key: str, head: Optional[Node]) -> bool:
     while head is not None:
